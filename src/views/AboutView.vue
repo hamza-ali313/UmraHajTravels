@@ -4,23 +4,42 @@
       <h1>About Us</h1>
       <p>Your Trusted Partner for Umrah & Hajj Journeys</p>
     </div>
-    
+
     <div class="container">
       <div class="company-story">
         <h2>Our Story</h2>
-        <p>Founded in 2008, UmrahTravel began with a simple mission: to help Muslims worldwide perform their spiritual obligations with ease and dignity. What started as a small family business has grown into one of the most trusted Umrah and Hajj service providers, serving over 50,000 pilgrims from 30+ countries.</p>
-        <p>We understand that embarking on a spiritual journey requires more than just booking tickets and hotels. It requires trust, reliability, and deep understanding of the religious and cultural needs of pilgrims. That's why every package we offer is carefully curated to ensure you can focus entirely on your worship.</p>
-        <p>Our team of experienced professionals, including religious scholars and travel experts, work tirelessly to ensure your journey is smooth, comfortable, and spiritually fulfilling.</p>
+        <p>
+          Founded in 2008, UmrahTravel began with a simple mission: to help Muslims worldwide
+          perform their spiritual obligations with ease and dignity. What started as a small family
+          business has grown into one of the most trusted Umrah and Hajj service providers, serving
+          over 50,000 pilgrims from 30+ countries.
+        </p>
+        <p>
+          We understand that embarking on a spiritual journey requires more than just booking
+          tickets and hotels. It requires trust, reliability, and deep understanding of the
+          religious and cultural needs of pilgrims. That's why every package we offer is carefully
+          curated to ensure you can focus entirely on your worship.
+        </p>
+        <p>
+          Our team of experienced professionals, including religious scholars and travel experts,
+          work tirelessly to ensure your journey is smooth, comfortable, and spiritually fulfilling.
+        </p>
       </div>
 
       <div class="mission-vision">
         <div class="mission">
           <h3>Our Mission</h3>
-          <p>To provide transparent, affordable, and high-quality Umrah and Hajj services that make spiritual journeys accessible to every Muslim, regardless of their budget.</p>
+          <p>
+            To provide transparent, affordable, and high-quality Umrah and Hajj services that make
+            spiritual journeys accessible to every Muslim, regardless of their budget.
+          </p>
         </div>
         <div class="vision">
           <h3>Our Vision</h3>
-          <p>To become the world's most trusted digital platform for Umrah and Hajj travel, leveraging technology to create seamless, personalized pilgrimage experiences.</p>
+          <p>
+            To become the world's most trusted digital platform for Umrah and Hajj travel,
+            leveraging technology to create seamless, personalized pilgrimage experiences.
+          </p>
         </div>
       </div>
 
@@ -69,15 +88,14 @@
   </div>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
 
 <style scoped>
 .about-page {
   margin-top: 60px;
 }
 .about-hero {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/about-bg.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/about-bg.jpg');
   background-size: cover;
   background-position: center;
   height: 40vh;
@@ -102,7 +120,7 @@
 }
 .company-story h2 {
   font-size: 2rem;
-  color: #1a472a;
+  color: #006d73;
   margin-bottom: 1.5rem;
 }
 .company-story p {
@@ -116,14 +134,16 @@
   gap: 2rem;
   margin-bottom: 4rem;
 }
-.mission, .vision {
+.mission,
+.vision {
   background: #f9f9f9;
   padding: 2rem;
   border-radius: 10px;
   text-align: center;
 }
-.mission h3, .vision h3 {
-  color: #1a472a;
+.mission h3,
+.vision h3 {
+  color: #006d73;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -133,7 +153,7 @@
 .why-choose-us h2 {
   text-align: center;
   font-size: 2rem;
-  color: #1a472a;
+  color: #006d73;
   margin-bottom: 3rem;
 }
 .features-grid {
@@ -146,7 +166,7 @@
   padding: 2rem;
   background: white;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
 }
 .feature:hover {
@@ -157,12 +177,12 @@
   margin-bottom: 1rem;
 }
 .feature h3 {
-  color: #1a472a;
+  color: #006d73;
   margin-bottom: 0.5rem;
 }
 .cta-section {
   text-align: center;
-  background: linear-gradient(135deg, #1a472a 0%, #2d6a4f 100%);
+  background: linear-gradient(135deg, #006d73 0%, #2d6a4f 100%);
   color: white;
   padding: 4rem;
   border-radius: 10px;
@@ -173,8 +193,8 @@
 }
 .cta-button {
   display: inline-block;
-  background-color: #ffd700;
-  color: #1a472a;
+  background-color: #d8a113;
+  color: #000;
   padding: 1rem 2rem;
   text-decoration: none;
   border-radius: 5px;

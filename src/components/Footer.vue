@@ -40,12 +40,11 @@
   </footer>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
 
 <style scoped>
 .footer {
-  background-color: #1a472a;
+  background-color: #006d73;
   color: white;
   padding: 3rem 2rem 1rem;
   margin-top: 2rem;
@@ -79,7 +78,7 @@
   text-decoration: none;
 }
 .footer-section a:hover {
-  color: #ffd700;
+  color: #d8a113;
 }
 .social-links {
   display: flex;
@@ -90,11 +89,11 @@
   text-decoration: none;
 }
 .social-links a:hover {
-  color: #ffd700;
+  color: #d8a113;
 }
 .footer-bottom {
   text-align: center;
   padding-top: 2rem;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 </style>

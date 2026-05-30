@@ -13,14 +13,14 @@
             <div class="info-icon">📍</div>
             <div>
               <h3>Visit Us</h3>
-              <p>123 Main Street, Suite 100<br>New York, NY 10001<br>United States</p>
+              <p>123 Main Street, Suite 100<br />New York, NY 10001<br />United States</p>
             </div>
           </div>
           <div class="info-item">
             <div class="info-icon">📞</div>
             <div>
               <h3>Call Us</h3>
-              <p>+1 (555) 123-4567<br>+1 (555) 987-6543</p>
+              <p>+1 (555) 123-4567<br />+1 (555) 987-6543</p>
               <p class="hours">Mon-Fri: 9AM - 8PM EST</p>
             </div>
           </div>
@@ -28,14 +28,14 @@
             <div class="info-icon">✉️</div>
             <div>
               <h3>Email Us</h3>
-              <p>info@umrahtravel.com<br>support@umrahtravel.com</p>
+              <p>info@umrahtravel.com<br />support@umrahtravel.com</p>
             </div>
           </div>
           <div class="info-item">
             <div class="info-icon">💬</div>
             <div>
               <h3>Live Chat</h3>
-              <p>Chat with our support team<br>Available 24/7</p>
+              <p>Chat with our support team<br />Available 24/7</p>
             </div>
           </div>
         </div>
@@ -45,15 +45,15 @@
           <form @submit.prevent="submitForm">
             <div class="form-group">
               <label for="name">Full Name *</label>
-              <input type="text" id="name" v-model="form.name" required>
+              <input type="text" id="name" v-model="form.name" required />
             </div>
             <div class="form-group">
               <label for="email">Email Address *</label>
-              <input type="email" id="email" v-model="form.email" required>
+              <input type="email" id="email" v-model="form.email" required />
             </div>
             <div class="form-group">
               <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" v-model="form.phone">
+              <input type="tel" id="phone" v-model="form.phone" />
             </div>
             <div class="form-group">
               <label for="subject">Subject *</label>
@@ -89,7 +89,7 @@ const form = reactive({
   email: '',
   phone: '',
   subject: '',
-  message: ''
+  message: '',
 })
 
 const submitted = ref(false)
@@ -98,7 +98,7 @@ const submitForm = () => {
   // Here you would typically send data to your backend API
   console.log('Form submitted:', form)
   submitted.value = true
-  
+
   // Reset form after 3 seconds
   setTimeout(() => {
     submitted.value = false
@@ -107,7 +107,7 @@ const submitForm = () => {
       email: '',
       phone: '',
       subject: '',
-      message: ''
+      message: '',
     })
   }, 3000)
 }
@@ -118,7 +118,8 @@ const submitForm = () => {
   margin-top: 60px;
 }
 .contact-hero {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/contact-bg.jpg');
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/contact-bg.jpg');
   background-size: cover;
   background-position: center;
   height: 30vh;
@@ -143,9 +144,10 @@ const submitForm = () => {
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
 }
-.contact-info h2, .contact-form h2 {
+.contact-info h2,
+.contact-form h2 {
   font-size: 1.8rem;
-  color: #1a472a;
+  color: #006d73;
   margin-bottom: 2rem;
 }
 .info-item {
@@ -157,7 +159,7 @@ const submitForm = () => {
   font-size: 2rem;
 }
 .info-item h3 {
-  color: #1a472a;
+  color: #006d73;
   margin-bottom: 0.25rem;
 }
 .info-item p {
@@ -175,7 +177,7 @@ const submitForm = () => {
 .form-group label {
   display: block;
   margin-bottom: 0.5rem;
-  color: #1a472a;
+  color: #006d73;
   font-weight: bold;
 }
 .form-group input,
@@ -191,10 +193,10 @@ const submitForm = () => {
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #ffd700;
+  border-color: #d8a113;
 }
 .submit-btn {
-  background-color: #1a472a;
+  background-color: #006d73;
   color: white;
   padding: 1rem 2rem;
   border: none;

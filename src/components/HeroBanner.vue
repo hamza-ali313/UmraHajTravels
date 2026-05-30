@@ -2,18 +2,20 @@
   <section class="hero">
     <div class="hero-content">
       <h1>Your Sacred Journey Begins Here</h1>
-      <p>Customize your perfect Umrah package with ease. Quality service, transparent pricing, and spiritual fulfillment.</p>
+      <p>
+        Customize your perfect Umrah package with ease. Quality service, transparent pricing, and
+        spiritual fulfillment.
+      </p>
       <button class="hero-btn">Build Your Package</button>
     </div>
   </section>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
 
 <style scoped>
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/hero-bg.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   height: 80vh;
@@ -37,8 +39,8 @@
   margin-bottom: 2rem;
 }
 .hero-btn {
-  background-color: #ffd700;
-  color: #1a472a;
+  background-color: #d8a113;
+  color: #000;
   padding: 1rem 2rem;
   border: none;
   border-radius: 5px;

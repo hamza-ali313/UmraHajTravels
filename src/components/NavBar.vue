@@ -2,7 +2,9 @@
   <nav class="navbar">
     <div class="nav-container">
       <div class="logo">
-        <router-link to="/">UmrahTravel</router-link>
+        <router-link to="/">
+          <img v-bind:src="logo" alt="Logo" style="width: 100px" />
+        </router-link>
       </div>
       <div class="nav-links">
         <router-link to="/">Home</router-link>
@@ -16,12 +18,13 @@
 </template>
 
 <script setup>
+import logo from '../assets/muneeblogo.jpeg'
 </script>
 
 <style scoped>
 .navbar {
-  background-color: #1a472a;
-  padding: 1rem 2rem;
+  background-color: #006d73;
+  padding: 11px 0px 0px 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -35,7 +38,7 @@
   margin: 0 auto;
 }
 .logo a {
-  color: #ffd700;
+  color: #d8a113;
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
@@ -46,11 +49,11 @@
   margin: 0 1rem;
 }
 .nav-links a:hover {
-  color: #ffd700;
+  color: #d8a113;
 }
 .cta-btn {
-  background-color: #ffd700;
-  color: #1a472a;
+  background-color: #d8a113;
+  color: #006d73;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 5px;

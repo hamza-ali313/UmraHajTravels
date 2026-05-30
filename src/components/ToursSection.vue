@@ -35,7 +35,7 @@ defineProps(['tours'])
 }
 .section-header h2 {
   font-size: 2rem;
-  color: #1a472a;
+  color: #006d73;
   margin-bottom: 0.5rem;
 }
 .section-header p {
@@ -52,7 +52,7 @@ defineProps(['tours'])
 }
 .view-all-btn {
   display: inline-block;
-  background-color: #1a472a;
+  background-color: #006d73;
   color: white;
   padding: 0.75rem 2rem;
   text-decoration: none;

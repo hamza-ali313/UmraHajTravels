@@ -4,8 +4,15 @@
       <div class="about-content">
         <div class="about-text">
           <h2>About UmrahTravel</h2>
-          <p>With over 15 years of experience in Umrah and Hajj services, we have helped more than 50,000 pilgrims fulfill their spiritual journey with ease and comfort.</p>
-          <p>Our mission is to provide transparent, affordable, and high-quality travel packages that cater to every pilgrim's needs. From visa processing to accommodation, we handle everything so you can focus on your worship.</p>
+          <p>
+            With over 15 years of experience in Umrah and Hajj services, we have helped more than
+            50,000 pilgrims fulfill their spiritual journey with ease and comfort.
+          </p>
+          <p>
+            Our mission is to provide transparent, affordable, and high-quality travel packages that
+            cater to every pilgrim's needs. From visa processing to accommodation, we handle
+            everything so you can focus on your worship.
+          </p>
           <router-link to="/about" class="about-btn">Learn More About Us →</router-link>
         </div>
         <div class="about-stats">
@@ -31,8 +38,7 @@
   </section>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
 
 <style scoped>
 .about-teaser {
@@ -51,7 +57,7 @@
 }
 .about-text h2 {
   font-size: 2rem;
-  color: #1a472a;
+  color: #006d73;
   margin-bottom: 1rem;
 }
 .about-text p {
@@ -61,13 +67,13 @@
 }
 .about-btn {
   display: inline-block;
-  color: #1a472a;
+  color: #006d73;
   text-decoration: none;
   font-weight: bold;
   margin-top: 1rem;
 }
 .about-btn:hover {
-  color: #ffd700;
+  color: #d8a113;
 }
 .about-stats {
   display: grid;
@@ -79,11 +85,11 @@
   padding: 1.5rem;
   background: white;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 .stat h3 {
   font-size: 2rem;
-  color: #ffd700;
+  color: #d8a113;
   margin-bottom: 0.5rem;
 }
 .stat p {

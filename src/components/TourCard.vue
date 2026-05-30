@@ -1,7 +1,7 @@
 <template>
   <div class="tour-card">
     <div class="tour-image">
-      <img :src="tour.image" :alt="tour.title">
+      <img :src="tour.image" :alt="tour.title" />
     </div>
     <div class="tour-info">
       <h3>{{ tour.title }}</h3>
@@ -34,7 +34,7 @@ const viewDetails = () => {
 }
 .tour-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 .tour-image img {
   width: 100%;
@@ -46,7 +46,7 @@ const viewDetails = () => {
 }
 .tour-info h3 {
   margin: 0 0 0.5rem 0;
-  color: #1a472a;
+  color: #006d73;
 }
 .duration {
   color: #666;
@@ -58,13 +58,13 @@ const viewDetails = () => {
   margin: 0.5rem 0;
 }
 .price {
-  color: #ffd700;
+  color: #d8a113;
   font-size: 1.25rem;
   font-weight: bold;
   margin: 0.5rem 0;
 }
 .details-btn {
-  background-color: #1a472a;
+  background-color: #006d73;
   color: white;
   border: none;
   padding: 0.5rem 1rem;

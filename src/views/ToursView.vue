@@ -11,7 +11,7 @@
           <h3>Filter Packages</h3>
           <div class="filter-group">
             <label>Price Range</label>
-            <input type="range" min="500" max="5000" v-model="priceRange" step="100">
+            <input type="range" min="500" max="5000" v-model="priceRange" step="100" />
             <div class="price-range">${{ priceRange }} - $5000</div>
           </div>
           <div class="filter-group">
@@ -64,21 +64,21 @@ const itemsPerPage = 6
 
 const filteredTours = computed(() => {
   let filtered = [...tours]
-  
+
   // Filter by price
-  filtered = filtered.filter(tour => tour.price <= priceRange.value)
-  
+  filtered = filtered.filter((tour) => tour.price <= priceRange.value)
+
   // Filter by duration
   if (durationFilter.value !== 'all') {
-    filtered = filtered.filter(tour => {
+    filtered = filtered.filter((tour) => {
       const days = parseInt(tour.duration.split(' ')[0])
       if (durationFilter.value === '21') return days >= 21
       return days === parseInt(durationFilter.value)
     })
   }
-  
+
   // Sort
-  switch(sortBy.value) {
+  switch (sortBy.value) {
     case 'price-asc':
       filtered.sort((a, b) => a.price - b.price)
       break
@@ -86,13 +86,17 @@ const filteredTours = computed(() => {
       filtered.sort((a, b) => b.price - a.price)
       break
     case 'duration-asc':
-      filtered.sort((a, b) => parseInt(a.duration.split(' ')[0]) - parseInt(b.duration.split(' ')[0]))
+      filtered.sort(
+        (a, b) => parseInt(a.duration.split(' ')[0]) - parseInt(b.duration.split(' ')[0]),
+      )
       break
     case 'duration-desc':
-      filtered.sort((a, b) => parseInt(b.duration.split(' ')[0]) - parseInt(a.duration.split(' ')[0]))
+      filtered.sort(
+        (a, b) => parseInt(b.duration.split(' ')[0]) - parseInt(a.duration.split(' ')[0]),
+      )
       break
   }
-  
+
   return filtered
 })
 
@@ -110,7 +114,7 @@ const paginatedTours = computed(() => {
   margin-top: 60px;
 }
 .tours-hero {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/tours-bg.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/tours-bg.jpg');
   background-size: cover;
   background-position: center;
   height: 30vh;
@@ -145,7 +149,7 @@ const paginatedTours = computed(() => {
 }
 .filters-sidebar h3 {
   margin-bottom: 1.5rem;
-  color: #1a472a;
+  color: #006d73;
 }
 .filter-group {
   margin-bottom: 1.5rem;
@@ -156,7 +160,7 @@ const paginatedTours = computed(() => {
   font-weight: bold;
   color: #555;
 }
-.filter-group input[type="range"] {
+.filter-group input[type='range'] {
   width: 100%;
 }
 .filter-group select {
@@ -167,7 +171,7 @@ const paginatedTours = computed(() => {
 }
 .price-range {
   margin-top: 0.5rem;
-  color: #1a472a;
+  color: #006d73;
   font-weight: bold;
 }
 .tours-content {
@@ -192,7 +196,7 @@ const paginatedTours = computed(() => {
 }
 .pagination button {
   padding: 0.5rem 1rem;
-  background-color: #1a472a;
+  background-color: #006d73;
   color: white;
   border: none;
   border-radius: 5px;

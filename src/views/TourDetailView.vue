@@ -17,7 +17,12 @@
         <div class="main-content">
           <section class="overview">
             <h2>Package Overview</h2>
-            <p>{{ tour.description || 'Experience a spiritually enriching journey with our carefully curated package.' }}</p>
+            <p>
+              {{
+                tour.description ||
+                'Experience a spiritually enriching journey with our carefully curated package.'
+              }}
+            </p>
           </section>
 
           <section class="included-excluded">
@@ -54,7 +59,7 @@
             <button class="book-btn" @click="customizePackage">Customize This Package</button>
             <button class="inquiry-btn" @click="makeInquiry">Request Details</button>
           </div>
-          
+
           <div class="info-card">
             <h4>Need Help?</h4>
             <p>Call our travel experts:</p>
@@ -90,7 +95,7 @@ const tour = ref(null)
 
 const relatedTours = computed(() => {
   if (!tour.value) return []
-  return tours.filter(t => t.id !== tour.value.id).slice(0, 3)
+  return tours.filter((t) => t.id !== tour.value.id).slice(0, 3)
 })
 
 const customizePackage = () => {
@@ -109,7 +114,7 @@ const startChat = () => {
 
 onMounted(() => {
   const tourId = parseInt(route.params.id)
-  tour.value = tours.find(t => t.id === tourId)
+  tour.value = tours.find((t) => t.id === tourId)
 })
 </script>
 
@@ -128,7 +133,7 @@ onMounted(() => {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
   color: white;
   padding: 3rem 0;
 }
@@ -156,7 +161,7 @@ onMounted(() => {
   margin-bottom: 3rem;
 }
 .main-content h2 {
-  color: #1a472a;
+  color: #006d73;
   margin-bottom: 1rem;
   font-size: 1.8rem;
 }
@@ -168,14 +173,17 @@ onMounted(() => {
   padding: 2rem;
   border-radius: 10px;
 }
-.included h3, .excluded h3 {
+.included h3,
+.excluded h3 {
   margin-bottom: 1rem;
 }
-.included ul, .excluded ul {
+.included ul,
+.excluded ul {
   list-style: none;
   padding: 0;
 }
-.included li, .excluded li {
+.included li,
+.excluded li {
   padding: 0.5rem 0;
   border-bottom: 1px solid #eee;
 }
@@ -195,7 +203,7 @@ onMounted(() => {
 }
 .day {
   font-weight: bold;
-  color: #1a472a;
+  color: #006d73;
 }
 .sidebar {
   position: sticky;
@@ -203,7 +211,7 @@ onMounted(() => {
   height: fit-content;
 }
 .booking-card {
-  background: linear-gradient(135deg, #1a472a 0%, #2d6a4f 100%);
+  background: linear-gradient(135deg, #006d73 0%, #2d6a4f 100%);
   color: white;
   padding: 2rem;
   border-radius: 10px;
@@ -222,7 +230,9 @@ onMounted(() => {
   font-size: 0.9rem;
   opacity: 0.9;
 }
-.book-btn, .inquiry-btn, .chat-btn {
+.book-btn,
+.inquiry-btn,
+.chat-btn {
   width: 100%;
   padding: 1rem;
   margin: 0.5rem 0;
@@ -232,8 +242,8 @@ onMounted(() => {
   font-weight: bold;
 }
 .book-btn {
-  background-color: #ffd700;
-  color: #1a472a;
+  background-color: #d8a113;
+  color: #006d73;
 }
 .inquiry-btn {
   background-color: transparent;
@@ -241,8 +251,8 @@ onMounted(() => {
   border: 2px solid white;
 }
 .chat-btn {
-  background-color: #ffd700;
-  color: #1a472a;
+  background-color: #d8a113;
+  color: #006d73;
 }
 .info-card {
   background: #f9f9f9;
@@ -253,7 +263,7 @@ onMounted(() => {
 .info-card .phone {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #1a472a;
+  color: #006d73;
   margin: 0.5rem 0;
 }
 .related-tours {
@@ -262,7 +272,7 @@ onMounted(() => {
 .related-tours h2 {
   text-align: center;
   font-size: 2rem;
-  color: #1a472a;
+  color: #006d73;
   margin-bottom: 2rem;
 }
 .related-grid {
